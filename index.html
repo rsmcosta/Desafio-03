@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+</head>
+<body>
+<h1>Informe seus dados</h1>
+<div>
+    <label for : "nome"> Nome Completo:</label>
+    <input type: "text" id = "nome">
+    
+</div>
+<br>
+<div>
+    <label for : "endereco">Endereço:</label>
+    <input type: "text" id = "endereco">
+    
+</div>
+<br>
+<div>
+    <label for : "bairro">Bairro:</label>
+    <input type: "text" id = "bairro">
+</div>
+<br>
+<div>
+    <label for : "cidade">Cidade:</label>
+    <input type: "text" id = "cidade">
+</div>
+<br>
+<div>
+    <label for : "estado">Estado:</label>
+    <input type: "text" id = "estado">
+</div>
+<br>
+<div>
+    <label for : "cep">CEP:</label>
+    <input type: "text" id = "cep">
+</div>
+<br>
+<div>
+    <label for : "telefone">Telefone:</label>
+    <input type: "text" id = "telefone">
+</div>
+<br>
+
+<input type: "button" onclick="displayFormulario()" value = "Salvar"> 
+<div>
+    <h4 id = 'nomeimprimir'></h4> 
+    <h4 id = 'enderecoimprimir'></h4>
+    <h4 id = 'bairroimprimir'></h4>
+    <h4 id = 'cidadeimprimir'></h4>
+    <h4 id = 'estadoimprimir'></h4>
+    <h4 id = 'cepimprimir'></h4>
+    <h4 id = 'telefoneimprimir'></h4>
+ 
+</div>
+
+
+</body>
+<script>
+    function displayFormulario()
+    {
+        var nome = document.getElementById('nome');
+        var nomeimprimir = document.getElementById('nomeimprimir');
+        var endereco = document.getElementById('endereco');
+        var enderecoimprimir = document.getElementById('enderecoimprimir');
+        var bairro = document.getElementById('bairro');
+        var bairroimprimir = document.getElementById('bairroimprimir');
+        var cidade = document.getElementById('cidade');
+        var cidadeimprimir = document.getElementById('cidadeimprimir');
+        var estado = document.getElementById('estado');
+        var estadoimprimir = document.getElementById('estadoimprimir');
+        var cep = document.getElementById('cep');
+        var cepimprimir = document.getElementById('cepimprimir');
+        var telefone = document.getElementById('telefone');
+        var telefoneimprimir = document.getElementById('telefoneimprimir');
+                
+        nomeimprimir.innerHTML = nome.value;
+        enderecoimprimir.innerHTML = endereco.value;   
+        bairroimprimir.innerHTML = bairro.value;
+        cidadeimprimir.innerHTML = cidade.value;
+        estadoimprimir.innerHTML = estado.value;
+        cepimprimir.innerHTML = cep.value;
+        telefoneimprimir.innerHTML = telefone.value;
+
+        alert(nome.value);
+    }
+</script>
+<script>
+
+</script>
+</html>
